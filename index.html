@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="PB2002_plates.js"></script>
+        <script src="Trench.js"></script>
+        <script src="script.js"></script>   
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <title>Les tremblements de terre</title>
+    </head>
+<body>
+    <header>
+        <img src="/Images/L.CégepLimoilou_2cHor.jpg" alt="Logo Cégep">
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#section1">À propos</a></li>
+                <li><a href="#section2">Images</a></li>
+                <li><a href="#section3">Carte</a></li>
+                <li><a href="#section4">Sites</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+        <section id="section1">
+            <h3>À propos</h3>
+            <p><br></p>
+            <p>Un séisme ou tremblement de terre est une secousse du sol résultant de la libération brusque d'énergie accumulée par les contraintes exercées sur les roches. 
+               Cette libération d'énergie se fait par rupture le long d'une faille, généralement préexistante. Plus rares sont les séismes dus à l'activité volcanique ou 
+               d'origine artificielle (explosions par exemple). Le lieu de la rupture des roches en profondeur se nomme le foyer ; la projection du foyer à la surface est 
+               l'épicentre du séisme. Le mouvement des roches près du foyer engendre des vibrations élastiques qui se propagent, sous la forme de paquets d'ondes sismiques, 
+               autour et au travers du globe terrestre. Il produit aussi un dégagement de chaleur par frottement, au point de parfois fondre les roches le long de la faille 
+               (pseudotachylites). 
+               <br><br>
+               Il se produit de très nombreux séismes tous les jours, mais la plupart ne sont pas ressentis par les humains. Environ cent mille séismes sont enregistrés 
+               chaque année sur la planète. Les plus puissants d'entre eux comptent parmi les catastrophes naturelles les plus destructrices. Les séismes les plus importants 
+               modifient la période de rotation de la Terre et donc la durée d'une journée (de l'ordre de la microseconde). 
+               <br><br>
+               La majorité des séismes se produisent à la limite entre les plaques tectoniques (séismes interplaques) de la terre, mais il peut aussi y avoir des séismes à 
+               l'intérieur des plaques (séismes intraplaques). La tectonique des plaques rend compte convenablement de la répartition des ceintures de sismicité à la surface 
+               du globe : les grandes ceintures sismiques du globe, caractérisées par la densité géographique des tremblements de terre, sont la ceinture de feu du Pacifique 
+               (elle libère 80 % de l'énergie sismique chaque année), la ceinture alpine (15 % de l'énergie annuelle) et les dorsales dans les océans (5 % de l'énergie annuelle). 
+               <br><br>
+               La science qui étudie ces phénomènes est la sismologie, pratiquée par les sismologues, et son instrument de mesure principal est le sismographe, qui produit des 
+               sismogrammes. L'acquisition et l'enregistrement du signal s'obtiennent dans une station sismique regroupant, outre les capteurs eux-mêmes, des enregistreurs, 
+               numériseurs et antennes GPS, pour le positionnement géographique et le temps.
+               <br><br>
+               <span style="font-size: 10px;font-style: italic;">Source: https://fr.wikipedia.org/wiki/Séisme</span>
+            </p>
+        </section>
+        <section id="section2">
+            <h3>Quelques images impressionnantes</h3>
+            <p><br></p>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="/Images/Seisme_mexico.jpg" alt="Séisme Mexico">
+                    <p>Conséquences d'un séisme à Mexico.</p>
+                </div>
+                <div class="image-item">
+                    <img src="/Images/haiti.jpg" alt="Haïti">
+                    <p>Séisme en Haïti le 12 janvier 2012 - Environ 200 000 victimes</p>
+                </div>
+                <div class="image-item">
+                    <img src="/Images/Turquie.jpg" alt="Turquie">
+                    <p>Turquie: séisme de magnitude 5,1 dans la mer de Marmara, au sud d'Istanbul</p>
+                </div> 
+                <div class="image-item">
+                    <img src="/Images/image-titre-seismes.png" alt="Route détruite">
+                    <p>Cisaillement de la route sous l'effet d'un fort séisme</p>
+                </div> 
+                <div class="image-item">
+                    <img src="/Images/japon_tsunami.jpg" alt="Tsunami au Japon">
+                    <p>Tsunami au Japon causé par un séisme dans l'océan</p>
+                </div>
+                <div class="image-item">
+                    <img src="/Images/japon2.jpg" alt="Tsunami au Japon">
+                    <p>Tsunami causé pas un séisme de magnitude 6,6 dans l'Océan Pacifique</p>
+                </div>              
+            </div>            
+        </section>
+        <section id="section3">
+            <div id="map">
+                <script src="script.js"></script>                       
+            </div>
+        </section>
+        <section id="section4">
+            <a href="https://fr.wikipedia.org/wiki/Séisme">Séisme - Wikipedia</a>
+            <a href="https://earthquake.usgs.gov/earthquakes/map/?extent=-80.11856,112.5&extent=69.77895,540&baseLayer=satellite">Earthquakes - USGS</a>
+            <a href="https://www.seismescanada.rncan.gc.ca/index-fr.php">Séismes Canada</a>
+        </section>
+    </main>
+    <footer>
+        <p>Jérôme Rioux - Cégep Limoilou 230-6W5-LI Cartographie Web Hiver 2024</p>
+    </footer>
+</body>
+</html> 
